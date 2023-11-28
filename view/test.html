@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Box</title>
+    <style>
+        #search-form {
+            display: none;
+        }
+
+        .show-form #search-form {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-container">
+        <button id="search-toggle" onclick="toggleSearch()">Search</button>
+        <form id="search-form">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Go</button>
+        </form>
+    </div>
+    <script>
+        function toggleSearch() {
+            document.querySelector('.search-container').classList.toggle('show-form');
+        }
+    </script>
+</body>
+
+</html>
